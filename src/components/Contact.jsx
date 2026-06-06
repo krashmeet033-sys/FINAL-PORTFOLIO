@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Send, ArrowUpRight } from 'lucide-react';
+import { Mail, Github, Linkedin, FileText, Send, ArrowUpRight } from 'lucide-react';
 
 const ContactLink = ({ icon: Icon, label, value, href }) => (
   <a 
@@ -42,25 +42,34 @@ const Contact = () => {
           </p>
 
           <div className="grid gap-4">
-            <ContactLink 
-              icon={Mail} 
-              label="Email" 
-              value="krashmeet033@gmail.com" 
-              href="mailto:krashmeet033@gmail.com" 
-            />
-            <ContactLink 
-              icon={Github} 
-              label="GitHub" 
-              value="@krashmeet033-sys" 
-              href="https://github.com/krashmeet033-sys" 
-            />
-            <ContactLink 
-              icon={Linkedin} 
-              label="LinkedIn" 
-              value="RASHMEET KAUR" 
-              href="https://www.linkedin.com/in/rashmeet-kaur-738281396" 
-            />
-          </div>
+  <ContactLink
+    icon={Mail}
+    label="Email"
+    value="krashmeet033@gmail.com"
+    href="mailto:krashmeet033@gmail.com"
+  />
+
+  <ContactLink
+    icon={Github}
+    label="GitHub"
+    value="@krashmeet033-sys"
+    href="https://github.com/krashmeet033-sys"
+  />
+
+  <ContactLink
+    icon={Linkedin}
+    label="LinkedIn"
+    value="RASHMEET KAUR"
+    href="https://www.linkedin.com/in/rashmeet-kaur-738281396"
+  />
+
+  <ContactLink
+    icon={FileText}
+    label="Resume"
+    value="Download Resume"
+    href="/Resume.pdf"
+  />
+</div>
         </motion.div>
 
         <motion.div
